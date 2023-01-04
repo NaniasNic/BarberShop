@@ -12,6 +12,7 @@ export const Container = styled.div`
 
     .opacity {
         height: 100%;
+        backdrop-filter: blur(3px);
         background: rgb(0,0,0);
         background: linear-gradient(249deg, rgba(0,0,0,0.6758053563222164) 0%, rgba(0,0,0,0.7178221630449055) 100%);
         display: flex;

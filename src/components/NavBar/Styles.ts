@@ -10,6 +10,10 @@ export const Container = styled.nav`
         height: 100px;
     }
 
+    svg {
+        display: none;
+    }
+
     .menu ul{
         display: flex;
         gap: 2.5rem;
