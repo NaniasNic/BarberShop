@@ -17,6 +17,7 @@ export const Container = styled.nav`
     .menu ul{
         display: flex;
         gap: 2.5rem;
+        user-select: none;
     }
 
     .menu ul li {
@@ -33,5 +34,21 @@ export const Container = styled.nav`
 
     .shop {
         display: flex;
+    }
+
+    @media screen and (max-width: 900px) {
+        .menu {
+            display: none;
+        }
+
+        .shop {
+            display: none;
+        }
+
+        svg {
+            display: block;
+            color: #fff;
+            cursor: pointer;
+        }
     }
 `;

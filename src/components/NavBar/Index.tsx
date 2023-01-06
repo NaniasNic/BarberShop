@@ -23,6 +23,7 @@ export function NavBar() {
             />
 
             <BiMenu 
+                size={45}
                 onClick={() => setMenuIsVisible(true)}
             />
 

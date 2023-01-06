@@ -22,11 +22,12 @@ export const Container = styled.div`
 
     h1 {
         color: #fff;
-        font-size: 3.5rem;
+        font-size: 4.2rem;
         text-transform: uppercase;
         display: flex;
         flex-direction: column;
         margin-left: 5rem;
+        user-select: none;
     }
     
     span {
@@ -43,7 +44,9 @@ export const Container = styled.div`
 
     p {
         color: #fff;
+        font-size: 1.2rem;
         margin-top: 2.3rem;
         margin-left: 5rem;
+        user-select: none;
     }
 `;

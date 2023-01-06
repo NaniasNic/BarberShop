@@ -18,7 +18,7 @@ export const Container = styled.div`
     background: rgb(0,0,0);
     background: linear-gradient(249deg, rgba(0,0,0,0.8718837876947654) 0%, rgba(0,0,0,0.8690826672465861) 100%);
 
-    opacity: 0;
+    opacity: ${({ isVisible }) => isVisible ? 1 : 0};
     pointer-events: none;
 
     transition: .5s ease;
@@ -30,14 +30,32 @@ export const Container = styled.div`
         color: #fff;
     }
 
-    .menu ul{
+    .menuMob ul{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        user-select: none;
     }
 
-    .shop {
+    .menuMob ul{
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    .menuMob ul li {
+        text-decoration: none;
+        list-style: none;
+        color: #fff;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+
+    .menuMob ul li:nth-child(1){
+        color: #92846A;
+    }
+
+    .shopMob {
         margin-top: 1rem;
         display: flex;
         flex-direction: column;
@@ -46,12 +64,11 @@ export const Container = styled.div`
         gap: 10px;
     }
 
-    .shop button {
+    .shopMob button {
         width: 100%;
     }
 
     ${({ isVisible }) => isVisible && css`
-        opacity: 1;
         pointer-events: auto;
     `}
 `;

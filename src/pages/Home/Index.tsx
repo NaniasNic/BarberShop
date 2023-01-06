@@ -1,4 +1,5 @@
 import { About } from "../../components/About/Index";
+import { More } from "../../components/More/Index";
 import { NavBar } from "../../components/NavBar/Index";
 
 export function Home() {
@@ -6,6 +7,7 @@ export function Home() {
         <div>
             <NavBar />
             <About />
+            <More />
         </div>
     )
 }
