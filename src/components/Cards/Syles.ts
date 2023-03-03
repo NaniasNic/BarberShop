@@ -25,4 +25,14 @@ export const Card = styled.div`
         color: #fff;
         text-transform: uppercase;
     }
+
+    p {
+        text-align: center;
+        color: #fff;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        color: #92846A;
+    }
 `;

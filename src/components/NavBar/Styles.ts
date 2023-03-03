@@ -36,7 +36,7 @@ export const Container = styled.nav`
         display: flex;
     }
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 940px) {
         .menu {
             display: none;
         }

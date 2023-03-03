@@ -49,4 +49,29 @@ export const Container = styled.div`
         margin-left: 5rem;
         user-select: none;
     }
+
+    @media screen and (max-width: 700px) {
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 520px) {
+        h1 {
+            margin-left: 2rem;
+            font-size: 2.5rem;
+        }
+
+        hr {
+            margin-left: 2rem;
+        }
+
+        p {
+            margin-left: 2rem;
+        }
+    }
 `;
